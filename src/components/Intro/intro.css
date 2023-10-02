@@ -1,0 +1,86 @@
+#intro{
+    height: calc(100vh-100rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.photo{
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    z-index: -1;
+    object-fit: cover;
+    height: auto;
+    mix-blend-mode: overlay;
+    clip-path: circle(45% at 50% 50%);
+
+}
+.introContent{
+    height: 80vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+.hello {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.IntroName{
+    color: rgb(166, 112, 31);
+}
+.IntroPara{
+   font-size: medium;
+   font-weight: 100; 
+   letter-spacing: 1.5px;
+}
+.btn{
+    background: whitesmoke;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.btnImg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1.5rem;
+    
+}
+@media screen and (max-width:840px) {
+    .bg{
+        right: -10vw;
+        
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .bg{
+        right: -20vw;
+        
+    }
+    /* .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+     */
+}
